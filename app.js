@@ -87,10 +87,13 @@ setTimeout(blastOff,5000);
 
 
 //exercise
-function printName(){
-    console.log('Margaret');
+function printName(name){
+    console.log(name);
 }
 
-setTimeout(printName,5000);
+let myNametwo = "Margaret";
+setTimeout(function(){
+    printName(myNametwo);
+},3000);
 
 
