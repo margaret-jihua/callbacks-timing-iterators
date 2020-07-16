@@ -97,3 +97,36 @@ setTimeout(function(){
 },3000);
 
 
+//////////iterators!!!
+
+//forEach
+
+const fruits = ['apple', 'pear', 'coconut','pineapple'];
+
+fruits.forEach(function(element){
+    console.log(element);
+})
+
+fruits.forEach(element => {
+    console.log(element);
+})
+
+//map
+
+const someNumbers = [34, 55, 23, 99];
+
+const addFive = someNumbers.map(element => {
+    return element +5;
+})
+
+console.log(addFive);
+
+
+//filter
+const filterNum = someNumbers.filter(element => {
+    if (element > 50){
+        return element;
+    }
+})
+
+console.log(filterNum);
