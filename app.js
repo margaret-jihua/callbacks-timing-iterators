@@ -52,3 +52,21 @@ function subtractNumbers(num1, num2){
 }
 
 console.log(calculator(5, 77, addNumbers, subtractNumbers));
+
+
+// make a superHero function
+
+function superHero(callbackOne, callbackTwo){
+    let result = callbackOne() + " and " + callbackTwo();
+    return result;
+}
+
+function superPower1(){
+    return "light speed";
+}
+
+function superPower2(){
+    return "time travel";
+}
+
+console.log(superHero(superPower1,superPower2));
