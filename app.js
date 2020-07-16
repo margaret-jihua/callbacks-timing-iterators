@@ -70,3 +70,27 @@ function superPower2(){
 }
 
 console.log(superHero(superPower1,superPower2));
+
+
+///////Timeing Function
+
+function blastOff(){
+    let num = 0;
+
+    for (let i = 10; i >= num; i--){
+        console.log(i);
+    }
+    console.log('Blast OFF!!');
+}
+
+setTimeout(blastOff,5000);
+
+
+//exercise
+function printName(){
+    console.log('Margaret');
+}
+
+setTimeout(printName,5000);
+
+
